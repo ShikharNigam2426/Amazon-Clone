@@ -1,0 +1,83 @@
+.product {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    max-height: 400px;
+    min-width: 100px;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product > button {
+    background-color: #f0c14b;
+    border: 1px solid;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    width: 120px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.product > button:hover {
+    cursor: pointer;
+}
+
+.product > img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.productPrice {
+    margin-top: 5px;
+}
+
+.productInfo {
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.productRating {
+    display: flex;
+}
+
+.product:hover {
+    overflow: hidden;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 767px) {
+    .productInfo > p {
+        font-size: xx-small;
+    }
+    
+    .productPrice {
+        font-size: x-small !important;
+    }
+    
+    .productRating {
+        font-size: x-small;
+    }
+    
+    .product > img {
+        width: 21vw; /* Adjust the width as needed for your design */
+        margin: 0px auto;
+    }
+    
+    .product {
+        width: 43vw!important;
+        height: 32vh; /* Let the height adjust based on content */
+    }
+}

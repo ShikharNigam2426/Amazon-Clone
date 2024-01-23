@@ -1,0 +1,53 @@
+/* Footer.css */
+.footer {
+    background-color: #232f3e;
+    color: #ffffff;
+    padding: 40px 0 0;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer__section {
+    margin-bottom: 30px;
+    max-width: 200px;
+  }
+  
+  .footer__section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f0c14b; /* Amazon's yellow color */
+  }
+  
+  .footer__section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer__section li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer__section li:hover {
+    color: #f0c14b; /* Change color on hover to Amazon's yellow */
+  }
+  
+  .footer__bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #131a22;
+    border-top: 1px solid #44505c; /* Dark border at the top */
+  }
+  
+  .footer__bottom p {
+    font-size: 14px;
+    margin: 0;
+    color: #ffffff;
+  }
+  
